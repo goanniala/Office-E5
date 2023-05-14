@@ -19,7 +19,7 @@ jobs:
     - name: Setup timezone
       uses: zcong1993/setup-timezone@v1.1.1
       with:
-        timezone: Asia/Shanghai
+        timezone: Asia/Taipei
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
@@ -37,8 +37,8 @@ jobs:
         tail run.log   
     - name: Commit log
       env:
-        NAME: merrycodes
-        EMAIL: merrycodes@163.com
+        NAME: goanniala
+        EMAIL: albert.n.95640.jpg@gmail.com
       run: |
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
